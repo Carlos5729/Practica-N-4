@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box; /* Hace que padding y border no aumenten el tamaño real del elemento */
+  margin: 0; /* Quita márgenes por defecto */
+  padding: 0; /* Quita espacios internos por defecto */
+  font-family: Arial, Helvetica, sans-serif; /* Fuente general de toda la página */
+}
+
+body {
+  background: #d9d9d9; /* Color de fondo general de la página */
+}
+
+.window {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  min-height: 100vh; /* Altura mínima igual a toda la pantalla */
+  border: 1px solid #8c8c8c; /* Borde exterior */
+  background: #f2f2f2; /* Fondo claro */
+}
+
+.topbar {
+  height: 30px; /* Altura de la barra superior */
+  background: linear-gradient(to bottom, #c9def2, #8fb4d9); /* Degradado estilo Windows clásico */
+  color: #1b1b1b; /* Color del texto */
+  display: flex; /* Activa flexbox */
+  align-items: center; /* Centra verticalmente */
+  justify-content: space-between; /* Separa texto y botones */
+  padding: 0 10px; /* Espacio horizontal interno */
+  font-size: 14px; /* Tamaño de texto */
+  border-bottom: 1px solid #7a9aba; /* Línea inferior */
+}
+
+.window-buttons {
+  display: flex; /* Coloca los botones en fila */
+  gap: 6px; /* Espacio entre botones */
+}
+
+.window-buttons span {
+  width: 16px; /* Ancho del botón */
+  height: 16px; /* Alto del botón */
+  border: 1px solid #666; /* Borde del botón */
+  background: #dfe8f2; /* Fondo del botón */
+  display: inline-block; /* Permite que respete ancho y alto */
+}
+
+.menubar {
+  height: 28px; /* Altura del menú */
+  display: flex; /* Elementos en fila */
+  align-items: center; /* Centrado vertical */
+  gap: 20px; /* Espacio entre opciones */
+  padding: 0 10px; /* Espaciado interno */
+  background: #efefef; /* Fondo gris claro */
+  border-bottom: 1px solid #c6c6c6; /* Línea inferior */
+  font-size: 14px; /* Tamaño del texto */
+}
+
+.app {
+  width: 1060px; /* Ancho fijo de la aplicación */
+  margin: 24px 0 0 0; /* Separación superior */
+  border: 1px solid #8da3b5; /* Borde del contenedor */
+  background: white; /* Fondo blanco */
+}
+
+.section-title {
+  background: linear-gradient(to bottom, #9cc0e2, #7ea5cc); /* Degradado azul */
+  color: #14395a; /* Color del texto */
+  font-weight: bold; /* Texto en negrita */
+  padding: 8px 10px; /* Espaciado interno */
+  font-size: 15px; /* Tamaño del texto */
+}
+
+.header {
+  height: 122px; /* Altura del encabezado */
+  background: linear-gradient(to right, #53a2d9, #1b6aa6, #144b7d); /* Fondo azul degradado */
+  color: white; /* Texto blanco */
+  display: flex; /* Acomoda logo e info de usuario en fila */
+  justify-content: space-between; /* Uno a la izquierda y otro a la derecha */
+  align-items: flex-start; /* Alinea arriba */
+  padding: 18px 28px; /* Espaciado interno */
+}
+
+.logo-box {
+  display: flex; /* Coloca logo y texto en fila */
+  align-items: center; /* Centra verticalmente */
+  gap: 18px; /* Espacio entre logo y texto */
+}
+
+.flag {
+  width: 72px; /* Tamaño del logo */
+  height: 72px;
+  border-radius: 50%; /* Lo vuelve circular */
+  background:
+    linear-gradient(to bottom, #d92d2d 0 33%, #f4dc43 33% 66%, #2da84a 66% 100%); /* Colores tipo bandera */
+  filter: blur(2px); /* Lo difumina un poco */
+}
+
+.logo-box h1 {
+  font-size: 54px; /* Tamaño grande para el nombre */
+  letter-spacing: 4px; /* Espacio entre letras */
+  line-height: 1; /* Altura de línea compacta */
+  text-shadow: 1px 1px 2px rgba(0,0,0,.35); /* Sombra del texto */
+}
+
+.logo-box p {
+  font-size: 28px; /* Tamaño del subtítulo */
+  font-family: Georgia, serif; /* Fuente con estilo clásico */
+  opacity: 0.9; /* Leve transparencia */
+}
+
+.user-info {
+  text-align: left; /* Alinea texto a la izquierda */
+  font-size: 20px; /* Tamaño del texto */
+  line-height: 1.4; /* Espaciado entre líneas */
+  margin-top: 8px; /* Separación superior */
+}
+
+.content {
+  display: flex; /* Divide menú lateral y panel principal en columnas */
+  min-height: 560px; /* Altura mínima */
+}
+
+.sidebar {
+  width: 190px; /* Ancho del menú lateral */
+  background: #f2f2f2; /* Fondo claro */
+  border-right: 1px solid #c7c7c7; /* Línea divisoria derecha */
+  padding: 18px 12px; /* Espaciado interno */
+}
+
+.sidebar h2 {
+  color: #1d4f86; /* Azul del título */
+  font-size: 18px; /* Tamaño del texto */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 18px; /* Espacio debajo */
+  font-weight: bold; /* Negrita */
+}
+
+.sidebar button {
+  width: 100%; /* Cada botón ocupa todo el ancho */
+  margin-bottom: 10px; /* Separación entre botones */
+  padding: 10px 8px; /* Espaciado interno */
+  background: linear-gradient(to bottom, #f5f5f5, #d7e7f1); /* Fondo degradado */
+  border: 2px solid #8ea8ba; /* Borde del botón */
+  color: #153e66; /* Color del texto */
+  font-size: 14px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar encima */
+  box-shadow: inset 0 0 0 1px #ffffff; /* Efecto interno */
+}
+
+.sidebar button.active {
+  outline: 2px dotted #2e73b7; /* Marca el botón seleccionado */
+  outline-offset: -6px; /* Mete la línea punteada hacia adentro */
+}
+
+.main-panel {
+  flex: 1; /* Hace que ocupe todo el espacio restante */
+  background: #fff; /* Fondo blanco */
+}
+
+.info-bar {
+  background: #ffffff; /* Fondo blanco */
+  color: #2f5d91; /* Texto azul */
+  padding: 12px 16px 6px; /* Espaciado interno */
+  border-bottom: 1px solid #d7d7d7; /* Línea inferior */
+  font-size: 14px; /* Tamaño de texto */
+}
+
+.info-bar div {
+  margin-bottom: 8px; /* Espacio entre líneas */
+}
+
+.info-bar span {
+  margin-left: 16px; /* Separación entre código y descripción */
+}
+
+.hero {
+  position: relative; /* Permite posicionar elementos hijos dentro */
+  height: 500px; /* Altura del panel */
+  background:
+    linear-gradient(to bottom, rgba(180, 228, 237, 0.75), rgba(17, 56, 119, 0.88)), /* Capa de color encima */
+    url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat; /* Imagen de fondo */
+  overflow: hidden; /* Oculta lo que sobresalga */
+}
+
+.overlay {
+  position: absolute; /* Se coloca encima del fondo */
+  inset: 0; /* Ocupa todo el contenedor */
+  background: rgba(168, 225, 236, 0.22); /* Capa semitransparente */
+}
+
+.watermark {
+  position: absolute; /* Posición libre dentro del hero */
+  right: 30px; /* Distancia desde la derecha */
+  bottom: 40px; /* Distancia desde abajo */
+  font-size: 42px; /* Tamaño grande */
+  color: rgba(255,255,255,0.75); /* Blanco semitransparente */
+  font-style: italic; /* Texto en cursiva */
+  font-weight: bold; /* Negrita */
+  text-shadow: 1px 1px 3px rgba(0,0,0,.25); /* Sombra suave */
+}
+
+.statusbar {
+  height: 26px; /* Altura de la barra inferior */
+  border-top: 1px solid #b9b9b9; /* Línea superior */
+  background: #efefef; /* Fondo gris claro */
+  display: flex; /* Elementos en fila */
+  justify-content: flex-end; /* Los manda hacia la derecha */
+  gap: 20px; /* Espacio entre textos */
+  align-items: center; /* Centrado vertical */
+  padding: 0 12px; /* Espaciado interno */
+  font-size: 13px; /* Tamaño del texto */
+  color: #444; /* Color de texto oscuro */
+}

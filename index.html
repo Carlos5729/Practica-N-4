@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Indica que el documento usa HTML5 -->
+<html lang="es"> <!-- Define el idioma de la página en español -->
+<head>
+  <meta charset="UTF-8" /> <!-- Permite usar tildes, ñ y caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Hace que se adapte en pantallas pequeñas -->
+  <title>Sistema de Activos Fijos</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="Style.css" /> <!-- Conecta el archivo CSS con este HTML -->
+</head>
+<body>
+  <div class="window"> <!-- Contenedor principal de toda la interfaz -->
+
+    <div class="topbar"> <!-- Barra superior parecida a una ventana de sistema -->
+      <span>SISTEMA DE ACTIVOS FIJOS - Administración Autónoma para Obras Sanitarias - Potosí</span>
+      
+      <div class="window-buttons"> <!-- Botones decorativos de minimizar, maximizar y cerrar -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="menubar"> <!-- Barra de menú superior -->
+      <span>Sistema</span>
+      <span>Ayuda</span>
+    </div>
+
+    <div class="app"> <!-- Caja principal de la aplicación -->
+      <div class="section-title">SISTEMA DE ACTIVOS FIJOS</div> <!-- Título de sección -->
+
+      <div class="header"> <!-- Encabezado azul principal -->
+        <div class="logo-box"> <!-- Área donde irá el logo y nombre del sistema -->
+          <div class="flag"></div> <!-- Figura decorativa tipo logo -->
+          <div>
+            <h1>V.S.I.A.F</h1> <!-- Nombre principal del sistema -->
+            <p>Sistema de Activos Fijos</p> <!-- Subtítulo -->
+          </div>
+        </div>
+
+        <div class="user-info"> <!-- Información del usuario logueado -->
+          <p><strong>USUARIO:</strong> admin</p>
+          <p><strong>BACKUPS:</strong> None</p>
+        </div>
+      </div>
+
+      <div class="content"> <!-- Contenedor que divide menú lateral y panel principal -->
+
+        <aside class="sidebar"> <!-- Menú lateral izquierdo -->
+          <h2>MENU PRINCIPAL</h2>
+
+          <button class="active">Activos Fijos</button> <!-- Botón activo/seleccionado -->
+          <button>Grupos y Auxiliares</button>
+          <button>Oficinas y Responsables</button>
+          <button>Generar Reportes</button>
+          <button>Administradores</button>
+          <button>Iniciar sesión</button>
+          <button>Respaldos BD</button>
+          <button>Administrar Unidad</button>
+          <button>Localización BD</button>
+        </aside>
+
+        <main class="main-panel"> <!-- Área principal derecha -->
+          <div class="info-bar"> <!-- Franja con datos de entidad y unidad -->
+            <div><strong>ENTIDAD:</strong> 821 <span>Administración Autónoma para Obras Sanitarias - Potosí</span></div>
+            <div><strong>UNIDAD:</strong> UA01 <span>Unidad de Activos Fijos</span></div>
+          </div>
+
+          <div class="hero"> <!-- Panel grande central con fondo decorativo -->
+            <div class="overlay"></div> <!-- Capa transparente encima de la imagen -->
+            <div class="watermark">Potosí</div> <!-- Texto decorativo en la esquina -->
+          </div>
+        </main>
+      </div>
+
+      <div class="statusbar"> <!-- Barra inferior estilo estado del sistema -->
+        <span>admin</span>
+        <span>c:\vsiaf\</span>
+        <span>20</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
