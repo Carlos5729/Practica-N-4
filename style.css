@@ -1,4 +1,4 @@
-* {
+{
   box-sizing: border-box; /* Hace que padding y border no aumenten el tamaño real del elemento */
   margin: 0; /* Quita márgenes por defecto */
   padding: 0; /* Quita espacios internos por defecto */
